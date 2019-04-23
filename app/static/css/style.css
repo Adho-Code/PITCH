@@ -4,5 +4,14 @@
 
 @import "~bootstrap/dist/css/bootstrap.css";
 
-
+.card-body{
+    margin-right:2rem;
+    margin-bottom:2rem;
+   
+}
+.card-body:hover{
+        color: #2f4f4f; 
+        background-color:#708090;
+        zoom:105%;
+}
 
