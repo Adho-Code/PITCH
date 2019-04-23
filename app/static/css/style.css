@@ -4,14 +4,21 @@
 
 @import "~bootstrap/dist/css/bootstrap.css";
 
+ body{
+    background-image:url('https://st3.depositphotos.com/14431644/19280/i/1600/depositphotos_192805940-stock-photo-word-writing-text-what-is.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
 .card-body{
     margin-right:2rem;
     margin-bottom:2rem;
-   
+    height: 4em;
+    
 }
 .card-body:hover{
         color: #2f4f4f; 
-        background-color:#708090;
+
         zoom:105%;
 }
 
