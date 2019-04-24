@@ -1,26 +1,7 @@
-.topnavbar{
-	background-color:blue;
-}
+
 
 @import "~bootstrap/dist/css/bootstrap.css";
 
- body{
-    background-image:url('https://c8.alamy.com/comp/MDKKW2/word-writing-text-what-is-your-pitch-question-business-concept-for-present-proposal-introducing-project-or-product-written-plain-background-within-pi-MDKKW2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-} 
-
-.card-body{
-    margin-right:2rem;
-    margin-bottom:2rem;
-    height: 4em;
-    
-}
-.card-body:hover{
-        color: #2f4f4f; 
-
-        zoom:105%;
-}
 
 .pitch img {
     max-width: 90px;

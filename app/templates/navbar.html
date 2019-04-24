@@ -1,4 +1,4 @@
-<div class="navbar navbar-inverse" role="navigation" class="topnavbar">
+<!-- <div class="navbar navbar-inverse" role="navigation" class="topnavbar">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapse">
@@ -9,8 +9,7 @@
                     </button>
               <a class="navbar-brand" href="/" ><img style="width:20px;height:20px;"src="../static/logo.png"></a>
               <a class="navbar-brand" href="/category/new" >ADD CATEGORY</a>
-              
-  
+            
       </div>
 
     </div>
@@ -26,4 +25,56 @@
         {%endif%}
       </ul>
     </div>
+  </div> -->
+
+
+
+
+
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      {% if current_user.is_authenticated %}
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item" style="margin:2%;"><a href="{{url_for('main.profile',uname=current_user.username)}}"> PROFILE </a></li>
+      <li class="nav-item" style="margin:2%"><a href="{{url_for('auth.logout')}}"> SIGNOUT </a></li>
+      {% else %}
+      <li style="margin:2%;"><a href="/">HOME</a></li>
+      <li id="sign-in" style="margin:2%;"><a href="{{url_for('auth.login')}}">SIGNIN</a></li>
+      {%endif%}
+
+
+      <li class="nav-item">
+        <a class="navbar-brand" href="/category/new">ADD CATEGORY</a>
+      </li>
+
+
+      <!-- Dropdown -->
+
+    </ul>
+    <!-- Links -->
+
   </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->

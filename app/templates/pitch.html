@@ -6,20 +6,28 @@
 {%endblock%}
 
 <!-- content block -->
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Use an element to toggle between a like/dislike icon -->
+
 {% block content %}
 <div class="container">
   <div class="col-md-6">
     <div class="well">
       <h3>{{pitches.actual_pitch}}</h3>
+      
     </div>
-    <button class="btn btn-warning">like</button>
-    <button class="btn btn-danger">dislike</button>
+    
+    <button class="btn btn-warning" id="button1" onclick="like()">like</button>
+    <p type="text" id="show_like"></p>
+    <button class="btn btn-danger" id="button2" onclick="dislike()">dislike</button>
+    <p type="text" id="show_dislike"></p>
   </div>
   <div class="col-md-6">
       <h4>Comments:</h4>
       {% if comment %}
-      {{wtf.quick_form(comment_form)}}
-
+     
       {{ macro.displaySpecificPitch(comment)}}
       <hr>
       {%else%}
@@ -28,8 +36,9 @@
       <p class="text-right"><a class="btn btn-primary" href="/pitch/new/{{pitches.id}}">Add a comment</a></p>
   </div>
 </div>
-<!-- <script>
-  alert("success")
-</script> -->
+<script>
+  
+  
+</script>
 
 {% endblock %}

@@ -23,5 +23,5 @@ class CommentForm(FlaskForm):
 
 
 class CategoriesForm(FlaskForm):
-	name = TextAreaField('WRITE COMMENT')
+	name = TextAreaField('PITCH')
 	submit = SubmitField('SUBMIT')
