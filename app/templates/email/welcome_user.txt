@@ -1,7 +1,7 @@
 Hello {{user.username}}
-Welcome to News Room
+Welcome to Pitch
 We have just seen you have
 signed up for our application
 and want to welcome you to the
- family. You will get to view all the current news
+ pitch ideas. You will get to pitch all the current pitch
  wherever and whenever.
