@@ -22,10 +22,13 @@
         zoom:105%;
 }
 
+.btn-primary{
+    -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
 
-
-/* .btn-primary{
+.btn-primary{
     background-color: #4CAF50; /* Green */
-    color: red;
-} */
+  color: white;
+}
 
