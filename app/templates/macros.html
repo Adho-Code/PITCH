@@ -10,6 +10,19 @@
 
 {% macro displayPitches(pitch_list) %}
   {% for pitches in pitch_list %}
+  {% if pitches.user.profile_pic_path %}
+  <p>
+      <p>
+          <img src="{{url_for('static',filename = pitches.user.profile_pic_path)}}" alt="" class="img-thumbnail">
+          <h5>Username:<strong>{{pitches.user.username|capitalize}}</strong></h5>
+  </p>
+  {% else %}
+  <p>
+          <img src="{{url_for('static',filename = 'photos/profile.jpg')}}" alt="" class="img-thumbnail">
+          <h5>Username: <strong>{{pitches.user.username|capitalize}}</strong></h5>
+  </p> 
+  {% endif %}
+  </p>
   <div class="col-md-6">
     <div class="well">
       <div class="row">
@@ -19,6 +32,7 @@
         <div class="col-md-6">
           <p>POSTED: {{pitches.date_posted.strftime('%Y/%m/%d || %r')}}</p>
           <a href="/pitch/{{pitches.id}}"><h4>COMMENT</h4></a>
+          
         </div>
       </div>
     </div>
@@ -31,5 +45,5 @@
  {% for comment in specific_pitch_list %}
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
   <hr> {{comment.comment_id}}
-</div>
+ </div>
 {% endfor %}{% endmacro %}
