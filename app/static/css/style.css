@@ -22,13 +22,8 @@
         zoom:105%;
 }
 
-.btn-primary{
-    -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
+.pitch img {
+    max-width: 90px;
 
-.btn-primary{
-    background-color: #4CAF50; /* Green */
-  color: white;
 }
 

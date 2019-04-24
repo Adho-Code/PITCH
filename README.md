@@ -31,11 +31,12 @@ Python uses a number of open source projects to work properly:
 
 `$ git clone https://adhoadhi.github.io/PITCH/`
 
-Install the dependencies which are python3.6
+# Install the dependencies which are :
 
+`python3.6 -m venv --without pip virtual`
 `$ pip install -r requirments.txt`
 `$ chmod a+x start.sh`
 `$ ./start.sh`
-For production environments...
 
-$ python manage.py server
+## For production environments...
+`$ python manage.py server`
