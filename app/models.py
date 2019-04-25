@@ -44,6 +44,7 @@ class PitchCategory(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255))
     description = db.Column(db.String(255))
+    name=db.Column(db.String(500))
 
     # save pitches
     def save_category(self):

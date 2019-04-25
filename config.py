@@ -11,7 +11,7 @@ class Config:
 	MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
 	SUBJECT_PREFIX = 'PITCH'
 	SENDER_EMAIL = 'adhoadhigal@gmail.com'
-	SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://adho:1234@localhost/pitch'
+	# SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://adho:1234@localhost/pitch'
 class TestConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://adho:1234@localhost/pitch'
 
