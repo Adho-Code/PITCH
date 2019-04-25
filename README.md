@@ -33,7 +33,6 @@ Python uses a number of open source projects to work properly:
 * Installation
 * To start application we first
 
-`$ git clone https://adhoadhi.github.io/PITCH/`
 
 # Install the dependencies which are :
 
