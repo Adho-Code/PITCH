@@ -20,8 +20,6 @@ You can also:
 * Liking and disliking but with bugs
 * The overriding design goal for The pitcherapp is to place people in the context of global understanding in the pitches piched in the world
 
-
-
 # Technology used
 Python uses a number of open source projects to work properly:
 
@@ -32,7 +30,6 @@ Python uses a number of open source projects to work properly:
 * flask
 * Installation
 * To start application we first
-
 
 # Install the dependencies which are :
 
